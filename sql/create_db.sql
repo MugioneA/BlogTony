@@ -1,5 +1,5 @@
-CREATE DATABASE blog;
-USE blog;
+CREATE DATABASE blog2;
+USE blog2;
 
 CREATE TABLE IF NOT EXISTS users (
   id bigint unsigned NOT NULL AUTO_INCREMENT,

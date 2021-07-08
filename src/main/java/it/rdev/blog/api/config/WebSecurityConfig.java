@@ -55,7 +55,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 		httpSecurity.csrf().disable()
 				// disabilito l'autenticazione per alcune URL
 				.authorizeRequests()
-					.antMatchers("/auth", "/register").permitAll()
+					.antMatchers("/auth", "/register","/actuator/**").permitAll()
 					.antMatchers(HttpMethod.GET, "/api/**").permitAll().
 				// tutte le altre URL sono protette da autenticazione
 				anyRequest().authenticated().and().

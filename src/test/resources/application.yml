@@ -25,7 +25,17 @@ jwt:
 default:
   page:
     size: 10
-
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+        - info
+        - health
+        - prometheus
+  endpoint:
+    prometheus:
+      enabled: true
 #server:
 #  port: 8080
 #
